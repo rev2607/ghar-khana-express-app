@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,48 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Neelam Ghar Ka Khana
+				'turmeric': {
+					'50': '#FFF8E1',
+					'100': '#FFECB3',
+					'200': '#FFE082',
+					'300': '#FFD54F',
+					'400': '#FFCA28',
+					'500': '#FFC107',
+					'600': '#FFB300',
+					'700': '#FFA000',
+					'800': '#FF8F00',
+					'900': '#FF6F00',
+				},
+				'coriander': {
+					'50': '#F1F8E9',
+					'100': '#DCEDC8',
+					'200': '#C5E1A5',
+					'300': '#AED581',
+					'400': '#9CCC65',
+					'500': '#8BC34A',
+					'600': '#7CB342',
+					'700': '#689F38',
+					'800': '#558B2F',
+					'900': '#33691E',
+				},
+				'beige': {
+					'50': '#FFFBF0',
+					'100': '#FFF7E1',
+					'200': '#FEEED3',
+					'300': '#FDE5C5',
+					'400': '#FBDCB7',
+					'500': '#F9D3A9',
+					'600': '#F7CA9B',
+					'700': '#F5C18D',
+					'800': '#F3B87F',
+					'900': '#F1AF71',
+				},
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'nunito': ['Nunito Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +126,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'scale-in': 'scale-in 0.3s ease-out',
 			}
 		}
 	},
